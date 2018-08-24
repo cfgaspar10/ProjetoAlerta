@@ -32,13 +32,12 @@ public class ExemploAlerta extends Application {
 	public void init() throws Exception {
 		super.init();
 		
-		
+		//setOnAction é somente uma ação
 		botao01.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
 				Alert alert = new Alert(AlertType.INFORMATION);	
 				alert.setTitle("Informação");
-				//retirando o cabeçalho
 				alert.setHeaderText(null);
 				alert.setContentText("Voce clicou no exemplo 01");
 				alert.show();
